@@ -56,7 +56,6 @@ public class EditEmployeeServlet extends HttpServlet {
         	Util.updateEmployeeIsValid(employee);
 
 			db.updateEmployee(employee);
-			System.out.println(employee);
 			
 			response.sendRedirect(request.getContextPath() + "/employees?d_id=" + d_id);
         }

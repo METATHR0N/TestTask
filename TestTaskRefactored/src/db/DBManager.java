@@ -324,7 +324,6 @@ public class DBManager {
 			pstmt.setString(k++, employee.getName());
 			pstmt.setString(k++, employee.getPhone());
 			pstmt.setDate(k++, employee.getBirthday(), cal);
-			System.out.println(employee.getBirthday());
 
 			if (pstmt.executeUpdate() > 0) {
 				rs = pstmt.getGeneratedKeys();
