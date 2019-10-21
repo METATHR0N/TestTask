@@ -382,7 +382,7 @@ public class DBManager {
 
 	private Department extractDepartment(ResultSet rs) throws SQLException {
 		Department department = new Department();
-		department.setId(rs.getInt("d_id")); // <-- Constants.FIELD_USERS_ID
+		department.setId(rs.getInt("d_id")); 
 		department.setName(rs.getString("Name"));
 		return department;
 	}
