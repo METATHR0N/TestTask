@@ -97,7 +97,7 @@ public class DBManager {
 				departments.add(extractDepartment(rs));
 			}
 		} finally {
-			//con.close();
+			con.close();
 		}
 
 		return departments;
